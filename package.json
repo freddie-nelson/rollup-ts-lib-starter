@@ -1,5 +1,5 @@
 {
-    "name": "rollup-ts-starter",
+    "name": "rollup-ts-lib-starter",
     "version": "1.0.0",
     "main": "dist/index.min.js",
     "module": "dist/index.esm.js",
