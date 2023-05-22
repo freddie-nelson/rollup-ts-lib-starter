@@ -2,9 +2,9 @@ import eslint from "@rollup/plugin-eslint";
 import json from "@rollup/plugin-json";
 import terser from "@rollup/plugin-terser";
 import typescript from "@rollup/plugin-typescript";
-import { watch } from "rollup";
 import del from "rollup-plugin-delete";
 import { typescriptPaths } from "rollup-plugin-typescript-paths";
+import resolve from "@rollup/plugin-node-resolve";
 
 /** @type {import('rollup').RollupOptions} */
 const options = {
@@ -34,6 +34,7 @@ const options = {
         typescriptPaths(),
         json(),
         eslint(),
+        resolve(),
     ],
 };
 
